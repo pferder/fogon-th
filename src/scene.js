@@ -130,7 +130,7 @@ class Scene {
 
 
   createGui() {
-    this.gui.add(this.ambient_light, 'intensity', 0.01, 2.01, 0.1).name('Brillo');
+    this.gui.add(this.ambient_light, 'intensity', 0.01, 2.01, 1).name('Brillo');
     this.music_volume = 100;
     let musicStreams = this.musicStreams;
     this.gui.add(this, 'music_volume', 0, 200, 10).name('Vol. Música').onChange(

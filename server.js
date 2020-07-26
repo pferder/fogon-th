@@ -166,8 +166,8 @@ let musicStreams = {
   // TODO: Completar
   "living": {
     id: "living",
-    songList: loadPlaylistData('public/music/living/playlist.m3u.ext'),
-    duration: loadDurationData('public/music/living/playlist.m3u.dur'),
+    // songList: loadPlaylistData('public/music/living/playlist.m3u.ext'),
+    // duration: loadDurationData('public/music/living/playlist.m3u.dur'),
     x: 0.5 / 1.5,
     y: 5 / 1.5,
     z: -9.7 / 1.5,
@@ -178,8 +178,8 @@ let musicStreams = {
   },
   "terraza": {
     id: "terraza",
-    songList: loadPlaylistData('public/music/terraza/playlist.m3u.ext'),
-    duration: loadDurationData('public/music/terraza/playlist.m3u.dur'),
+    // songList: loadPlaylistData('public/music/terraza/playlist.m3u.ext'),
+    // duration: loadDurationData('public/music/terraza/playlist.m3u.dur'),
     x: 9 / 1.5,
     y: 19 / 1.5,
     z: -10 / 1.5,
@@ -190,8 +190,8 @@ let musicStreams = {
   },
   "aulita": {
     id: "aulita",
-    songList: loadPlaylistData('public/music/aulita/playlist.m3u'),
-    duration: loadDurationData('public/music/aulita/playlist.m3u.dur'),
+    // songList: loadPlaylistData('public/music/aulita/playlist.m3u'),
+    // duration: loadDurationData('public/music/aulita/playlist.m3u.dur'),
     x: 8.5 / 1.5,
     y: 3,
     z: -12.5 / 1.5,
