@@ -2,6 +2,7 @@ module.exports = {
   // http server ip, port, and peer timeout constant
   //
   //httpIp: '192.168.1.145',
+  // httpIp: '66.97.47.117',
   httpIp: '192.168.0.22',
   //httpIp: '127.0.0.1',
   // httpIp: '142.93.6.195',
@@ -10,10 +11,10 @@ module.exports = {
 
   // ssl certs. we'll start as http instead of https if we don't have
   // these
-  // sslCrt: 'certs/fullchain.pem',
-  // sslKey: 'certs/privkey.pem',
-  sslCrt: 'certs/server.crt',
-  sslKey: 'certs/server.key',
+  sslCrt: 'certs/pferder.ddns.net/fullchain1.pem',
+  sslKey: 'certs/pferder.ddns.net/privkey1.pem',
+  // sslCrt: 'certs/server.crt',
+  // sslKey: 'certs/server.key',
 
   mediasoup: {
     worker: {
@@ -86,6 +87,7 @@ module.exports = {
       listenIps: [
        //{ ip: '127.0.0.1', announcedIp: null },
        //{ ip: '192.168.1.145', announcedIp: null },
+       // { ip: '66.97.47.117', announcedIp: null },
        { ip: '192.168.0.22', announcedIp: null },
       //  { ip: '142.93.6.195', announcedIp: null },
       ],

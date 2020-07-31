@@ -126,7 +126,7 @@ window.onload = async () => {
 		// sig('leave', {}, true)
 	});
 
-	alert("Allow YORB to access your webcam for the full experience");
+	alert("Permitinos acceder a tu cámara para una experiencia completa");
 	await startCamera();
 
 	var startButton = document.getElementById('startButton');
@@ -1038,7 +1038,7 @@ async function createTransport(direction) {
 		if (state === 'closed' || state === 'failed' || state === 'disconnected') {
 			log('transport closed ... leaving the room and resetting');
 			// leaveRoom();
-			alert("Your connection failed.  Please restart the page");
+			alert("Tu conexión falló. Por favor, refresca la página");
 		}
 	});
 

@@ -31,11 +31,15 @@ body {
 .main-content-container {
     position: relative;
     border: 15px inset grey;
-    box-sizing: border-box; /* Include padding and border in element's width and height */
+    box-sizing: border-box;
+    /* Include padding and border in element's width and height */
     overflow: hidden;
-    margin-top: 2%;
-    width: 90%;
-    height: 70%;
+    margin-top: 0%;
+    /*margin-top: 2%;*/
+    /*width: 90%;*/
+    width: 100%;
+    /*height: 70%;*/
+    height: 100%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -72,6 +76,7 @@ body {
     z-index: 9;
     visibility: hidden;
 }
+
 #instructions-to-exit {
     display: flex;
     justify-content: center;
@@ -85,7 +90,7 @@ body {
     color: white;
 }
 
-#overlay > div {
+#overlay>div {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -94,16 +99,25 @@ body {
     margin-right: auto;
 }
 
-#overlay > div > button {
+#overlay>div>button {
     display: block;
-    color: transparent;
-    background-color: transparent;
+    color: #FFFFFF;
+    font-family: VCR;
+    background-color: #1cce329e;
+    font-size: 45px;
     border: 0px;
+    border-radius: 7px;
     cursor: pointer;
-    padding: 0%;
+    padding: 20px;
+    position: absolute;
+    top: 40%;
 }
 
-#overlay > div > button > img {
+#overlay>div>button:hover {
+    background-color: #1cce32;
+    }
+
+#overlay>div>button>img {
     display: block;
     width: 400px;
     /* -webkit-animation: spin 12s linear infinite;
@@ -111,11 +125,11 @@ body {
     animation: spin 12s linear infinite; */
 }
 
-#overlay > div > button > img:hover {
+/*#overlay > div > button > img:hover {
     -webkit-animation: spin 4s linear infinite;
     -moz-animation: spin 4s linear infinite;
     animation: spin 4s linear infinite;
-}
+}*/
 
 .webcam-status-overlay {
     /* positioning */
@@ -127,20 +141,20 @@ body {
     z-index: 2;
 }
 
-.webcam-status-overlay > .vertical-positioning-container {
+.webcam-status-overlay>.vertical-positioning-container {
     position: absolute;
     bottom: 0;
     width: 100%;
 }
 
-.webcam-status-overlay > .vertical-positioning-container > .centered-container {
+.webcam-status-overlay>.vertical-positioning-container>.centered-container {
     position: relative;
     width: 100px;
     margin-left: auto;
     margin-right: auto;
 }
 
-.webcam-status-overlay > .vertical-positioning-container > .centered-container > img {
+.webcam-status-overlay>.vertical-positioning-container>.centered-container>img {
     width: 40px;
     /* https://stackoverflow.com/questions/12690444/css-border-on-png-image-with-transparent-parts */
     -webkit-filter: drop-shadow(5px -1px 4px #343434);
@@ -151,18 +165,22 @@ body {
     from {
         transform: rotate(0deg);
     }
+
     to {
         transform: rotate(360deg);
     }
 }
 
 .bottom_bar_container {
-    position: relative;
-    width: 90%;
+    position: absolute;
+    width: 100%;
     height: 20%;
     margin-left: auto;
     margin-right: auto;
+    z-index: 999;
+    bottom: 0;
 }
+
 /* https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
 .bottom_bar {
     /* position: absolute; */
@@ -179,16 +197,16 @@ body {
     flex-direction: row;
     flex-wrap: nowrap;
     /* Then we define how is distributed the remaining space */
-    justify-content: space-around;
+    justify-content: flex-start;
     padding: 0;
 }
 
-.bottom_bar > img {
+.bottom_bar>img {
     position: absolute;
     z-index: 3;
 }
 
-.bottom_bar > div {
+.bottom_bar>div {
     border: 10px inset grey;
     background-color: rgb(72, 72, 72);
     color: white;
@@ -197,10 +215,11 @@ body {
     padding: 0%;
     height: 100%;
     /*width: 21.25%;*/
-    width: 30%;*/
-    margin: 0px;
+    width: 30%;
+    */ margin: 0px;
     font-size: 0.85em;
-    box-sizing: border-box; /* Include padding and border in element's width and height */
+    box-sizing: border-box;
+    /* Include padding and border in element's width and height */
     text-align: center;
     overflow: hidden;
 }
@@ -213,17 +232,20 @@ body {
 .box-content {
     font-size: 12px;
     text-align: left;
-    margin: 5%;
+    margin: 15px 25%;
 }
-.box-content > a:link {
+
+.box-content>a:link {
     outline: none;
     text-decoration: none;
     color: yellow;
 }
-.box-content > a:visited {
+
+.box-content>a:visited {
     color: yellow;
 }
-.box-content > a:hover {
+
+.box-content>a:hover {
     background-color: rgba(0, 0, 0, 1);
     color: yellow;
 }
@@ -243,7 +265,8 @@ body {
 }
 
 #mini-map-box {
-    display: flex;
+    display: none;
+    /*display: flex;*/
     overflow: auto;
     background-color: black;
     position: relative;
@@ -280,10 +303,12 @@ body {
     from {
         margin-top: 80%;
     }
+
     to {
         margin-top: -100%;
     }
 }
+
 /* PROJECT MODAL */
 /* https://www.w3schools.com/howto/howto_css_modals.asp */
 /* The Modal (background) */
@@ -320,12 +345,12 @@ body {
     /* Could be more or less, depending on screen size */
 }
 
-.project-modal-img{
+.project-modal-img {
     display: block;
     margin-left: auto;
     margin-right: auto;
     /* width: 30%; */
-    max-height:220px;
+    max-height: 220px;
 }
 
 .project-modal-title {
@@ -341,15 +366,17 @@ body {
     font-size: 14px;
     line-height: 17px;
     font-family: monospace;
-    width:80%;
+    width: 80%;
     margin-left: 5%;
 }
-.project-modal-links-header{
+
+.project-modal-links-header {
     display: flex;
     margin-left: auto;
     margin-right: auto;
-    width: 50%; 
+    width: 50%;
 }
+
 .project-modal-link-container {
     display: flex;
     margin-left: auto;
@@ -378,6 +405,7 @@ body {
     justify-content: center;
     align-items: center;
 }
+
 .btn-audio {
     position: relative;
     width: 40px;

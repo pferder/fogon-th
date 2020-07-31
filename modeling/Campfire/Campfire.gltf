@@ -1,0 +1,436 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v1.2.75",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "extras" : {
+                "uiListCollec" : [
+                    {
+                        "idx" : 0,
+                        "val" : -0.12168195843696594,
+                        "color" : [
+                            0,
+                            0,
+                            0,
+                            1
+                        ]
+                    },
+                    {
+                        "idx" : 1,
+                        "val" : -0.003719921223819256,
+                        "color" : [
+                            1,
+                            1,
+                            1,
+                            1
+                        ]
+                    }
+                ]
+            },
+            "name" : "Scene",
+            "nodes" : [
+                0,
+                1,
+                2,
+                3
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "extras" : {},
+            "mesh" : 0,
+            "name" : "Embers.006",
+            "rotation" : [
+                0,
+                -0.987964391708374,
+                0,
+                0.15468141436576843
+            ],
+            "scale" : [
+                2.703004837036133,
+                2.8205325603485107,
+                2.703004837036133
+            ],
+            "translation" : [
+                0.5981757044792175,
+                -0.019281119108200073,
+                -1.1549367904663086
+            ]
+        },
+        {
+            "extras" : {},
+            "name" : "FireUVlocation",
+            "scale" : [
+                -0.14048132300376892,
+                -0.6111422181129456,
+                -0.5467856526374817
+            ],
+            "translation" : [
+                0.25838273763656616,
+                -0.8768985271453857,
+                -0.7774091958999634
+            ]
+        },
+        {
+            "extras" : {},
+            "mesh" : 1,
+            "name" : "Logs",
+            "translation" : [
+                0.2692752480506897,
+                -0.0317959189414978,
+                -0.8173619508743286
+            ]
+        },
+        {
+            "extras" : {},
+            "mesh" : 2,
+            "name" : "Rocks",
+            "rotation" : [
+                0,
+                -0.1522272229194641,
+                0,
+                0.9883455038070679
+            ],
+            "scale" : [
+                0.8168902397155762,
+                0.8168902397155762,
+                0.8168902397155762
+            ],
+            "translation" : [
+                0.32104039192199707,
+                -0.12291395664215088,
+                -0.8448166847229004
+            ]
+        }
+    ],
+    "materials" : [
+        {
+            "doubleSided" : true,
+            "emissiveFactor" : [
+                0,
+                0,
+                0
+            ],
+            "name" : "CharcoalEmissive",
+            "pbrMetallicRoughness" : {
+                "baseColorTexture" : {
+                    "index" : 0,
+                    "texCoord" : 0
+                },
+                "metallicFactor" : 0,
+                "roughnessFactor" : 0.5
+            }
+        },
+        {
+            "doubleSided" : true,
+            "emissiveFactor" : [
+                0,
+                0,
+                0
+            ],
+            "name" : "SmallRock",
+            "normalTexture" : {
+                "index" : 1,
+                "texCoord" : 0
+            },
+            "pbrMetallicRoughness" : {
+                "baseColorTexture" : {
+                    "index" : 2,
+                    "texCoord" : 0
+                },
+                "metallicFactor" : 0,
+                "metallicRoughnessTexture" : {
+                    "index" : 3,
+                    "texCoord" : 0
+                }
+            }
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "Cube.062",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "NORMAL" : 1,
+                        "TEXCOORD_0" : 2,
+                        "TEXCOORD_1" : 3
+                    },
+                    "indices" : 4,
+                    "material" : 0
+                }
+            ]
+        },
+        {
+            "name" : "Pine_log.001",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 5,
+                        "NORMAL" : 6,
+                        "TEXCOORD_0" : 7,
+                        "TEXCOORD_1" : 8
+                    },
+                    "indices" : 9,
+                    "material" : 0
+                }
+            ]
+        },
+        {
+            "name" : "Stein_low_polyStein(1).010",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 10,
+                        "NORMAL" : 11,
+                        "TEXCOORD_0" : 12
+                    },
+                    "indices" : 13,
+                    "material" : 1
+                }
+            ]
+        }
+    ],
+    "textures" : [
+        {
+            "sampler" : 0,
+            "source" : 0
+        },
+        {
+            "source" : 1
+        },
+        {
+            "source" : 2
+        },
+        {
+            "source" : 3
+        }
+    ],
+    "images" : [
+        {
+            "mimeType" : "image/jpeg",
+            "name" : "BigLog_basecolor",
+            "uri" : "Campfire/BigLog_basecolor.jpg"
+        },
+        {
+            "mimeType" : "image/jpeg",
+            "name" : "SmallRock_normal.tga",
+            "uri" : "Campfire/SmallRock_normal_tga.jpg"
+        },
+        {
+            "mimeType" : "image/jpeg",
+            "name" : "SmallRock_basecolor.tga",
+            "uri" : "Campfire/SmallRock_basecolor_tga.jpg"
+        },
+        {
+            "mimeType" : "image/jpeg",
+            "name" : "SmallRock_Roughness.tga",
+            "uri" : "Campfire/SmallRock_Roughness_tga.jpg"
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 5380,
+            "max" : [
+                0.3245188891887665,
+                0.021430231630802155,
+                0.10708654671907425
+            ],
+            "min" : [
+                -0.039474643766880035,
+                -0.00036433874629437923,
+                -0.22418461740016937
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 5380,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 5380,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5126,
+            "count" : 5380,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 4,
+            "componentType" : 5123,
+            "count" : 9324,
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 5,
+            "componentType" : 5126,
+            "count" : 11302,
+            "max" : [
+                0.5066825747489929,
+                0.39448899030685425,
+                0.4861200153827667
+            ],
+            "min" : [
+                -0.5066908001899719,
+                -0.000581462518312037,
+                -0.4861496686935425
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 6,
+            "componentType" : 5126,
+            "count" : 11302,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 7,
+            "componentType" : 5126,
+            "count" : 11302,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 8,
+            "componentType" : 5126,
+            "count" : 11302,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 9,
+            "componentType" : 5123,
+            "count" : 63414,
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 10,
+            "componentType" : 5126,
+            "count" : 3468,
+            "max" : [
+                0.782461404800415,
+                0.3099433183670044,
+                0.8423895239830017
+            ],
+            "min" : [
+                -0.8200094699859619,
+                0.001508152112364769,
+                -0.7481446266174316
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 11,
+            "componentType" : 5126,
+            "count" : 3468,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 12,
+            "componentType" : 5126,
+            "count" : 3468,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 13,
+            "componentType" : 5123,
+            "count" : 17850,
+            "type" : "SCALAR"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 64560,
+            "byteOffset" : 0
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 64560,
+            "byteOffset" : 64560
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 43040,
+            "byteOffset" : 129120
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 43040,
+            "byteOffset" : 172160
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 18648,
+            "byteOffset" : 215200
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 135624,
+            "byteOffset" : 233848
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 135624,
+            "byteOffset" : 369472
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 90416,
+            "byteOffset" : 505096
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 90416,
+            "byteOffset" : 595512
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 126828,
+            "byteOffset" : 685928
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 41616,
+            "byteOffset" : 812756
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 41616,
+            "byteOffset" : 854372
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 27744,
+            "byteOffset" : 895988
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 35700,
+            "byteOffset" : 923732
+        }
+    ],
+    "samplers" : [
+        {
+            "magFilter" : 9729,
+            "minFilter" : 9986
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 959432,
+            "uri" : "Campfire.bin"
+        }
+    ]
+}
