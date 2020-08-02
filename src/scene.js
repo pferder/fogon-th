@@ -232,7 +232,7 @@ class Scene {
         luzCuadroCocina.decay = 1.5;
         luzCuadroCocina.power = 10;
         luzCuadroCocina.distance = 6;
-        lightScene.add(luzCuadroCocina);
+        // lightScene.add(luzCuadroCocina);
         //makePointLightGUI(lightScene, this.gui, luzCuadroCocina, 'cuadro_cocina');
 
         let luzMesitaCocina = new THREE.PointLight(0xFFE587, 0.3);
@@ -240,7 +240,7 @@ class Scene {
         luzMesitaCocina.decay = 3;
         luzMesitaCocina.power = 15;
         luzMesitaCocina.distance = 3;
-        lightScene.add(luzMesitaCocina);
+        // lightScene.add(luzMesitaCocina);
         //makePointLightGUI(lightScene, this.gui, luzMesitaCocina, 'mesita_cocina');
 
         let luzAulita = new THREE.PointLight(0x1e224a, 0.3);
@@ -248,7 +248,7 @@ class Scene {
         luzAulita.decay = 2;
         luzAulita.power = 80;
         luzAulita.distance = 8;
-        lightScene.add(luzAulita);
+        // lightScene.add(luzAulita);
 
         //let luzMesitaCocina = new THREE.SpotLight(0xFFE587, 0.3);
         //luzMesitaCocina.position.set(2.8, 1, -8.6)
@@ -266,7 +266,7 @@ class Scene {
         luzMesitaBano.decay = 1;
         luzMesitaBano.power = 10;
         luzMesitaBano.distance = 3;
-        lightScene.add(luzMesitaBano);
+        // lightScene.add(luzMesitaBano);
         //lightScene.add(luzMesitaBano.target);
 
         //let luzExterior = new THREE.PointLight(0xFFE587, 0.3);
@@ -335,8 +335,8 @@ class Scene {
         luzCalle.decay = 1;
         luzCalle.angle = 0.34;
         luzCalle.penumbra = 0.3;
-        lightScene.add(luzCalle);
-        lightScene.add(luzCalle.target);
+        // lightScene.add(luzCalle);
+        // lightScene.add(luzCalle.target);
         //makeSpotLightGUI(lightScene, this.gui, luzCalle, 'calle');
 
         let luzTerrazaNE = new THREE.SpotLight(0xFFFFFF, 0.3);
@@ -397,14 +397,19 @@ class Scene {
 
     loadBackground() {
         var path = 'models/lopez/fondo-';
-        //var format = '.png';
-        //var path = 'models/Park2/';
-        var format = '-dark.jpg';
+        // var path = 'models/fogon/comunidad-';
+        // var format = '.png';
         // var format = '.jpg';
+        var format = '-dark.jpg';
+        //var path = 'models/Park2/';
+        // var format = '-dark.jpg';
         this.envMap = new THREE.CubeTextureLoader().load([
-            path + 'posy' + format, path + 'negy' + format, // x
-            path + 'posz' + format, path + 'negz' + format, // y
-            path + 'posx' + format, path + 'negx' + format // z
+            // path + 'px' + format, path + 'nx' + format, // x
+            // path + 'py' + format, path + 'ny' + format, // y
+            // path + 'pz' + format, path + 'nz' + format, // z
+            path + 'posy' + format, path + 'negy' + format, // y
+            path + 'posz' + format, path + 'negz' + format, // z
+            path + 'posx' + format, path + 'negx' + format, // x
         ]);
         //this.envMap.magFilter = THREE.NearestFilter;
         //this.envMap.minFilter = THREE.NearestFilter;
@@ -436,7 +441,7 @@ class Scene {
 
         //// wall material:
         //this.wallMaterial = new THREE.MeshPhongMaterial({
-        //	color: 0xfdfdfd,
+        //    color: 0xfdfdfd,
         //);
 
         //// ceiling material
@@ -450,31 +455,31 @@ class Scene {
         //floorTexture.repeat.set(1, 1);
 
         //this.floorMaterial = new THREE.MeshLambertMaterial({
-        //	color: 0xffffff,
-        //	map: floorTexture
+        //    color: 0xffffff,
+        //    map: floorTexture
         //});
         //
         //this.paintedMetalMaterial = new THREE.MeshLambertMaterial({
-        //	color: 0x1a1a1a,
-        //	flatShading: true,
+        //    color: 0x1a1a1a,
+        //    flatShading: true,
         //});
 
         //this.windowShelfMaterial = new THREE.MeshLambertMaterial({
-        //	color: 0x565656
+        //    color: 0x565656
         //});
 
         //// https://github.com/mrdoob/three.js/blob/master/examples/webgl_materials_physical_transparency.html
         //this.glassMaterial = new THREE.MeshLambertMaterial({
-        //	color: 0xD9ECFF,
-        //	transparent: true,
-        //	opacity: 0.25,
+        //    color: 0xD9ECFF,
+        //    transparent: true,
+        //    opacity: 0.25,
         //});
 
 
         //this.lightHousingMaterial = new THREE.MeshLambertMaterial({ color: 0x111111 });
 
         //this.lightDiffuserMaterial = new THREE.MeshLambertMaterial({
-        //	color: 0xcccccc
+        //    color: 0xcccccc
         //});
 
         //this.glassFixturingMaterial = new THREE.MeshLambertMaterial({ color: 0x000000 });
@@ -517,54 +522,54 @@ class Scene {
         // floorTexture.repeat.set(1, 1);
 
         // this.floorMaterial = new THREE.MeshPhongMaterial({
-        // 	color: 0xffffff,
-        // 	map: floorTexture,
-        // 	bumpMap: floorTexture,
-        // 	bumpScale: 0.005,
-        // 	specular: 0xffffff,
-        // 	reflectivity: 0.5,
-        // 	shininess: 4,
-        // 	envMap: null
+        //     color: 0xffffff,
+        //     map: floorTexture,
+        //     bumpMap: floorTexture,
+        //     bumpScale: 0.005,
+        //     specular: 0xffffff,
+        //     reflectivity: 0.5,
+        //     shininess: 4,
+        //     envMap: null
         // });
 
         // this.paintedMetalMaterial = new THREE.MeshPhongMaterial({
-        // 	color: 0x1a1a1a,
-        // 	bumpMap: paintedRoughnessTexture,
-        // 	bumpScale: 0.2,
-        // 	specular: 0xffffff,
-        // 	reflectivity: 0.01,
-        // 	shininess: 1,
-        // 	envMap: null
+        //     color: 0x1a1a1a,
+        //     bumpMap: paintedRoughnessTexture,
+        //     bumpScale: 0.2,
+        //     specular: 0xffffff,
+        //     reflectivity: 0.01,
+        //     shininess: 1,
+        //     envMap: null
         // });
 
         // this.windowShelfMaterial = new THREE.MeshPhongMaterial({
-        // 	color: 0xdddddd
+        //     color: 0xdddddd
         // });
 
         // // https://github.com/mrdoob/three.js/blob/master/examples/webgl_materials_physical_transparency.html
         // this.glassMaterial = new THREE.MeshPhysicalMaterial({
-        // 	color: 0xD9ECFF,
-        // 	metalness: 0.05,
-        // 	roughness: 0,
-        // 	alphaTest: 0.5,
-        // 	depthWrite: false,
-        // 	envMap: this.envMap,
-        // 	envMapIntensity: 1,
-        // 	transparency: 1, // use material.transparency for glass materials
-        // 	opacity: 1,                        // set material.opacity to 1 when material.transparency is non-zero
-        // 	transparent: true
+        //     color: 0xD9ECFF,
+        //     metalness: 0.05,
+        //     roughness: 0,
+        //     alphaTest: 0.5,
+        //     depthWrite: false,
+        //     envMap: this.envMap,
+        //     envMapIntensity: 1,
+        //     transparency: 1, // use material.transparency for glass materials
+        //     opacity: 1,                        // set material.opacity to 1 when material.transparency is non-zero
+        //     transparent: true
         // });
 
         // this.lightHousingMaterial = new THREE.MeshPhongMaterial({ color: 0x111111 });
 
         // this.lightDiffuserMaterial = new THREE.MeshPhongMaterial({
-        // 	color: 0xcccccc,
-        // 	emissive: 0xffffff,
-        // 	emissiveIntensity: 10,
-        // 	specular: 0xffffff,
-        // 	reflectivity: 0.01,
-        // 	shininess: 1,
-        // 	envMap: null
+        //     color: 0xcccccc,
+        //     emissive: 0xffffff,
+        //     emissiveIntensity: 10,
+        //     specular: 0xffffff,
+        //     reflectivity: 0.01,
+        //     shininess: 1,
+        //     envMap: null
         // });
 
         // this.glassFixturingMaterial = new THREE.MeshPhongMaterial({ color: 0x000000 });
@@ -647,6 +652,14 @@ class Scene {
         pasto_texture.repeat.set(40, 40);
         this.pasto_exterior_material = new THREE.MeshPhongMaterial({
             map: pasto_texture
+        });
+        // CUSTOM
+        let arena_texture = new THREE.TextureLoader().load('textures/arena.png');
+        arena_texture.wrapS = THREE.MirroredRepeatWrapping;
+        arena_texture.wrapT = THREE.MirroredRepeatWrapping;
+        arena_texture.repeat.set(40, 40);
+        this.arena_material = new THREE.MeshPhongMaterial({
+            map: arena_texture
         });
         this.copa_arbol_material = new THREE.MeshLambertMaterial({
             color: 0x318C23
@@ -821,7 +834,9 @@ class Scene {
         this.loadModel('models/lopez/copas_arboles.glb', this.copa_arbol_material, scaleFactor, false, false, true);
         this.loadModel('models/lopez/tallos_arboles.glb', this.tallo_arbol_material, scaleFactor, false, false, true);
         // this.loadModel('models/lopez/pasto_ext.glb', this.pasto_exterior_material, scaleFactor, false, false, true);
-        this.loadModel('models/lopez/nuevo-pasto-ext2.glb', this.pasto_exterior_material, scaleFactor, false, false, true);
+        // this.loadModel('models/lopez/nuevo-pasto-ext2.glb', this.pasto_exterior_material, scaleFactor, false, false, true);
+        this.loadModel('models/lopez/nuevo-pasto-ext2.glb', this.arena_material, scaleFactor, false, false, true);
+
 
         // this.loadModel('models/lopez/cartel_fiesta.glb', this.cartel_fiesta_material, scaleFactor, false, false, false);
         // this.loadModel('models/lopez/cartel_terraza.glb', this.cartel_terraza_material, scaleFactor, false, false, false);
@@ -1060,7 +1075,7 @@ class Scene {
 
                 // this.clients[_id].group.quaternion.slerp(this.clients[_id].desiredRotation, 0.2);
                 // if (this.clients[_id].group.quaternion.angleTo(this.clients[_id].desiredRotation) < snapAngle) {
-                // 	this.clients[_id].group.quaternion.set(this.clients[_id].desiredRotation.x, this.clients[_id].desiredRotation.y, this.clients[_id].desiredRotation.z, this.clients[_id].desiredRotation.w);
+                //     this.clients[_id].group.quaternion.set(this.clients[_id].desiredRotation.x, this.clients[_id].desiredRotation.y, this.clients[_id].desiredRotation.z, this.clients[_id].desiredRotation.w);
                 // }
             }
         }
@@ -1224,9 +1239,9 @@ class Scene {
      *
      * Description:
      * This function sets up collision detection:
-     * 	- creates this.collidableMeshList which will be populated by this.loadFloorModel function
-     * 	- creates this.obstacles object which will be queried by player controls before performing movement
-     * 	- generates arrays of collision detection points, from which we will perform raycasts in this.detectCollisions()
+     *     - creates this.collidableMeshList which will be populated by this.loadFloorModel function
+     *     - creates this.obstacles object which will be queried by player controls before performing movement
+     *     - generates arrays of collision detection points, from which we will perform raycasts in this.detectCollisions()
      *
      */
     setupCollisionDetection() {
@@ -1298,9 +1313,9 @@ class Scene {
      * Description:
      * 1. Creates THREE.Vector3 objects representing the current forward, left, right, backward direction of the character.
      * 2. For each side of the cube, 
-     * 		- uses the collision detection points created in this.setupCollisionDetection()
-     *		- sends a ray out from each point in the direction set up above 
-     * 		- if any one of the rays hits an object, set this.obstacles.SIDE (i.e. right or left) to true
+     *         - uses the collision detection points created in this.setupCollisionDetection()
+     *        - sends a ray out from each point in the direction set up above 
+     *         - if any one of the rays hits an object, set this.obstacles.SIDE (i.e. right or left) to true
      * 3. Give this.obstacles object to this.controls
      *
      * To Do: setup helper function to avoid repetitive code
@@ -1463,10 +1478,10 @@ class Scene {
      * updateProjects(projects) 
      *
      * Description:
-     * 	- empties out the existing projects array and any existing hyperlink objects within it
-     * 	- creates XYZ locations for each of the new project hyperlinks
-     * 	- calls this.createHyperlinkedMesh for each project in the projects array
-     * 	- places returned objects in this.hyperlinkedObjects array and adds them to the scene
+     *     - empties out the existing projects array and any existing hyperlink objects within it
+     *     - creates XYZ locations for each of the new project hyperlinks
+     *     - calls this.createHyperlinkedMesh for each project in the projects array
+     *     - places returned objects in this.hyperlinkedObjects array and adds them to the scene
      *
      */
     updateProjects(projects) {
@@ -1682,13 +1697,13 @@ class Scene {
             // startIndex = endIndex;
             // endIndex = 200;
             // for (let i = startIndex; i < endIndex; i++) {
-            // 	let proj = uniqueProjects[i];
-            // 	let locX = -23.55;
-            // 	let offset = (i - startIndex * 1);
-            // 	let locZ = -80 + offset;
-            // 	let hyperlink = this.createHyperlinkedMesh(locX, 1.75, locZ, proj);
-            // 	this.hyperlinkedObjects.push(hyperlink);
-            // 	this.scene.add(hyperlink);
+            //     let proj = uniqueProjects[i];
+            //     let locX = -23.55;
+            //     let offset = (i - startIndex * 1);
+            //     let locZ = -80 + offset;
+            //     let hyperlink = this.createHyperlinkedMesh(locX, 1.75, locZ, proj);
+            //     this.hyperlinkedObjects.push(hyperlink);
+            //     this.scene.add(hyperlink);
             // }
 
         }
@@ -1726,9 +1741,9 @@ class Scene {
      * createHyperlinkedMesh(x,y,z,_project) 
      *
      * Description:
-     * 	- creates an object3D for each project at position x,y,z 
-     *	- adds _project as userData to the object3D
-     *	- returns object3D
+     *     - creates an object3D for each project at position x,y,z 
+     *    - adds _project as userData to the object3D
+     *    - returns object3D
      */
 
     createHyperlinkedMesh(x, y, z, _project) {
@@ -1820,15 +1835,15 @@ class Scene {
      * generateProjectModal(project) 
      * 
      * Description:
-     * 	- generates a modal pop up for a given project object 
-     * 	- project objects look like this: 
-     *		{
-     *			"project_id": "1234",
-     *			"project_name": "Cats",
-     *			"elevator_pitch": "Cats are loving companions for now and all time.",
-     *			"description": "Cats is about building a sustainable online community for earth humans.",
-     *			"zoom_link": "http://example.com"
-     *		}
+     *     - generates a modal pop up for a given project object 
+     *     - project objects look like this: 
+     *        {
+     *            "project_id": "1234",
+     *            "project_name": "Cats",
+     *            "elevator_pitch": "Cats are loving companions for now and all time.",
+     *            "description": "Cats is about building a sustainable online community for earth humans.",
+     *            "zoom_link": "http://example.com"
+     *        }
      * 
      */
     zoomStatusDecoder(status) {
@@ -1961,8 +1976,8 @@ class Scene {
      * highlightHyperlinks() 
      * 
      * Description:
-     * 	- checks distance between player and object3Ds in this.hyperlinkedObjects array, 
-     * 	- calls this.generateProjectModal for any projects under a threshold distance
+     *     - checks distance between player and object3Ds in this.hyperlinkedObjects array, 
+     *     - calls this.generateProjectModal for any projects under a threshold distance
      * 
      */
     highlightHyperlinks() {
@@ -2540,23 +2555,23 @@ class Scene {
 
         // for the moment, positional audio using webAudio and THREE.PositionalAudio doesn't work...
         // see the issues on github
-        // let audioSource;	
+        // let audioSource;    
         // if (this.clients[_id]) {
-        // 	if ("positionalAudioSource" in this.clients[_id]) {
-        // 		audioSource = this.clients[_id].positionalAudioSource;
-        // 		this.scene.remove(audioSource);
-        // 	}
+        //     if ("positionalAudioSource" in this.clients[_id]) {
+        //         audioSource = this.clients[_id].positionalAudioSource;
+        //         this.scene.remove(audioSource);
+        //     }
 
-        // 	audioSource = new THREE.PositionalAudio(this.listener);
-        // 	audioSource.setRefDistance(10);
-        // 	audioSource.setRolloffFactor(10);
-        // 	audioSource.setVolume(1);
-        // 	this.clients[_id].positionalAudioSource = audioSource;
-        // 	this.clients[_id].group.add(audioSource);
+        //     audioSource = new THREE.PositionalAudio(this.listener);
+        //     audioSource.setRefDistance(10);
+        //     audioSource.setRolloffFactor(10);
+        //     audioSource.setVolume(1);
+        //     this.clients[_id].positionalAudioSource = audioSource;
+        //     this.clients[_id].group.add(audioSource);
 
-        // 	// audioSource.setMediaStreamSource(_audioStream);
-        // 	audioSource.setMediaElementSource(audioElement);
-        // 	console.log(audioSource);
+        //     // audioSource.setMediaStreamSource(_audioStream);
+        //     audioSource.setMediaElementSource(audioElement);
+        //     console.log(audioSource);
         // }
     }
 
@@ -2565,7 +2580,7 @@ class Scene {
     // Event Handlers 🍽
 
     onWindowResize(e) {
-        
+
         this.width = (window.innerWidth);
         // this.width = (window.innerWidth * 0.9);
         // this.height = (window.innerHeight * 0.7);
