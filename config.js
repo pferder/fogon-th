@@ -100,7 +100,7 @@ module.exports = {
     plainTransportOptions :
     {
       listenIp :
-      // { ip: '34.70.42.245', announcedIp: null },
+      { ip: '127.0.0.1', announcedIp: null },
       maxSctpMessageSize : 262144
     }
 };
