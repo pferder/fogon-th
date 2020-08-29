@@ -5,7 +5,7 @@ module.exports = {
   // httpIp: '66.97.47.117',
   //httpIp: '127.0.0.1',
   // httpIp: '142.93.6.195',
-  httpIp: '192.168.0.22',
+  httpIp: '192.168.0.20',
   httpPort: 443,
   httpPeerStale: 15000,
 
@@ -50,7 +50,7 @@ module.exports = {
             clockRate: 90000,
             parameters:
               {
-//                'x-google-start-bitrate': 1000
+               // 'x-google-start-bitrate': 1000
               }
           },
           {
@@ -62,7 +62,7 @@ module.exports = {
 						  'packetization-mode'      : 1,
 						  'profile-level-id'        : '4d0032',
 						  'level-asymmetry-allowed' : 1,
-//						  'x-google-start-bitrate'  : 1000
+						  // 'x-google-start-bitrate'  : 1000
 					  }
 				  },
 				  {
@@ -74,7 +74,7 @@ module.exports = {
 						  'packetization-mode'      : 1,
 						  'profile-level-id'        : '42e01f',
 						  'level-asymmetry-allowed' : 1,
-//						  'x-google-start-bitrate'  : 1000
+						  // 'x-google-start-bitrate'  : 1000
 					  }
 				  }
         ]
@@ -85,13 +85,19 @@ module.exports = {
     // run anywhere but on localhost
     webRtcTransport: {
       listenIps: [
-       { ip: '127.0.0.1:8080', announcedIp: null },
        //{ ip: '192.168.1.145', announcedIp: null },
        // { ip: '66.97.47.117', announcedIp: null },
-       { ip: '192.168.0.22', announcedIp: null },
+       { ip: '127.0.0.1', announcedIp: null },
+       // { ip: '192.168.0.20', announcedIp: null },
       //  { ip: '142.93.6.195', announcedIp: null },
       ],
       initialAvailableOutgoingBitrate: 800000,
     }
-  }
+  },
+    plainTransportOptions :
+    {
+      listenIp :
+      { ip: '192.168.0.20', announcedIp: null },
+      maxSctpMessageSize : 262144
+    }
 };

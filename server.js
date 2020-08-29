@@ -22,8 +22,8 @@ if (process.env.NODE_ENV == 'production') {
   config.httpIp = process.env.PRODUCTION_IP;
 
   config.mediasoup.webRtcTransport.listenIps = [
-    { ip: '192.168.0.22', announcedIp: null },
-    // { ip: process.env.PRODUCTION_IP, announcedIp: null }
+    // { ip: '192.168.0.22', announcedIp: null },
+    { ip: process.env.PRODUCTION_IP, announcedIp: null }
   ];
 }
 

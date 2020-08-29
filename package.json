@@ -1,7 +1,7 @@
 {
-  "name": "yorb2020",
+  "name": "fogon-th",
   "version": "1.0.0",
-  "description": "Repo for YORB2020, a virtual version of the fourth floor of 370 Jay Street.",
+  "description": "",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
