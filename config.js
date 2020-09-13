@@ -3,9 +3,9 @@ module.exports = {
   //
   //httpIp: '192.168.1.145',
   // httpIp: '66.97.47.117',
-  httpIp: '127.0.0.1',
+  // httpIp: '127.0.0.1',
   // httpIp: '142.93.6.195',
-  // httpIp: '192.168.0.20',
+  httpIp: '192.168.0.20',
   // httpIp: '34.70.42.245',
   httpPort: 443,
   httpPeerStale: 15000,
@@ -89,7 +89,7 @@ module.exports = {
        //{ ip: '192.168.1.145', announcedIp: null },
        // { ip: '66.97.47.117', announcedIp: null },
        { ip: '127.0.0.1', announcedIp: null },
-       // { ip: '192.168.0.20', announcedIp: null },
+       { ip: '192.168.0.20', announcedIp: null },
       //  { ip: '142.93.6.195', announcedIp: null },
        // { ip: '34.70.42.245', announcedIp: null },
 
@@ -100,7 +100,7 @@ module.exports = {
     plainTransportOptions :
     {
       listenIp :
-      { ip: '127.0.0.1', announcedIp: null },
+      { ip: '192.168.0.20', announcedIp: null },
       maxSctpMessageSize : 262144
     }
 };
