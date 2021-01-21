@@ -22,7 +22,7 @@
     "mediasoup-client": "^3.6.5",
     "p5": "^1.0.0",
     "simple-peer": "^9.6.2",
-    "socket.io": "^2.3.0",
+    "socket.io": "^2.4.0",
     "three": "^0.115.0",
     "three.equirectangular-to-cubemap": "^1.1.0",
     "twilio": "^3.40.0"
